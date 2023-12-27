@@ -609,6 +609,7 @@
             chartArea1.AxisX.MajorGrid.LineColor = System.Drawing.Color.White;
             chartArea1.AxisX.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.NotSet;
             chartArea1.AxisX.MajorGrid.LineWidth = 0;
+            chartArea1.AxisY.LabelStyle.Format = "$(0)";
             chartArea1.AxisY.LineWidth = 0;
             chartArea1.Name = "ChartArea1";
             this.expenses.ChartAreas.Add(chartArea1);
