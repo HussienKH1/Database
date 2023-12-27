@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea12 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend12 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series23 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series24 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pnlNav = new System.Windows.Forms.Panel();
             this.btndashb = new System.Windows.Forms.Button();
@@ -85,9 +85,16 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.Schedule = new System.Windows.Forms.Label();
             this.Recent = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.numberCredit = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label16 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -102,8 +109,8 @@
             this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.transaction_table)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -296,7 +303,7 @@
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1571, 44);
+            this.panel3.Size = new System.Drawing.Size(1622, 44);
             this.panel3.TabIndex = 2;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
@@ -527,9 +534,10 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.White;
+            this.panel6.Controls.Add(this.label16);
+            this.panel6.Controls.Add(this.dataGridView1);
             this.panel6.Controls.Add(this.numberCredit);
             this.panel6.Controls.Add(this.dataGridView2);
-            this.panel6.Controls.Add(this.dataGridView1);
             this.panel6.Controls.Add(this.Recent);
             this.panel6.Controls.Add(this.Schedule);
             this.panel6.Controls.Add(this.pictureBox4);
@@ -537,7 +545,7 @@
             this.panel6.Location = new System.Drawing.Point(1116, 93);
             this.panel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(455, 801);
+            this.panel6.Size = new System.Drawing.Size(506, 801);
             this.panel6.TabIndex = 9;
             // 
             // Year
@@ -624,42 +632,42 @@
             // 
             // expenses
             // 
-            chartArea3.AxisX.IsLabelAutoFit = false;
-            chartArea3.AxisX.LabelStyle.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            chartArea3.AxisX.LabelStyle.ForeColor = System.Drawing.Color.DarkOliveGreen;
-            chartArea3.AxisX.MajorGrid.LineColor = System.Drawing.Color.White;
-            chartArea3.AxisX.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.NotSet;
-            chartArea3.AxisX.MajorGrid.LineWidth = 0;
-            chartArea3.AxisY.LabelStyle.Format = "$(0)";
-            chartArea3.AxisY.LineWidth = 0;
-            chartArea3.Name = "ChartArea1";
-            this.expenses.ChartAreas.Add(chartArea3);
-            legend3.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Top;
-            legend3.Name = "Legend1";
-            this.expenses.Legends.Add(legend3);
+            chartArea12.AxisX.IsLabelAutoFit = false;
+            chartArea12.AxisX.LabelStyle.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            chartArea12.AxisX.LabelStyle.ForeColor = System.Drawing.Color.DarkOliveGreen;
+            chartArea12.AxisX.MajorGrid.LineColor = System.Drawing.Color.White;
+            chartArea12.AxisX.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.NotSet;
+            chartArea12.AxisX.MajorGrid.LineWidth = 0;
+            chartArea12.AxisY.LabelStyle.Format = "$(0)";
+            chartArea12.AxisY.LineWidth = 0;
+            chartArea12.Name = "ChartArea1";
+            this.expenses.ChartAreas.Add(chartArea12);
+            legend12.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Top;
+            legend12.Name = "Legend1";
+            this.expenses.Legends.Add(legend12);
             this.expenses.Location = new System.Drawing.Point(0, -1);
             this.expenses.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.expenses.Name = "expenses";
-            series5.BorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot;
-            series5.BorderWidth = 2;
-            series5.ChartArea = "ChartArea1";
-            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series5.Legend = "Legend1";
-            series5.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle;
-            series5.Name = "Expenses";
-            series5.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
-            series5.ShadowColor = System.Drawing.Color.Lime;
-            series5.ShadowOffset = 1;
-            series6.ChartArea = "ChartArea1";
-            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series6.Legend = "Legend1";
-            series6.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle;
-            series6.Name = "Saves";
-            series6.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
-            series6.ShadowColor = System.Drawing.Color.ForestGreen;
-            series6.ShadowOffset = 1;
-            this.expenses.Series.Add(series5);
-            this.expenses.Series.Add(series6);
+            series23.BorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot;
+            series23.BorderWidth = 2;
+            series23.ChartArea = "ChartArea1";
+            series23.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series23.Legend = "Legend1";
+            series23.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle;
+            series23.Name = "Expenses";
+            series23.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
+            series23.ShadowColor = System.Drawing.Color.Lime;
+            series23.ShadowOffset = 1;
+            series24.ChartArea = "ChartArea1";
+            series24.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series24.Legend = "Legend1";
+            series24.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle;
+            series24.Name = "Saves";
+            series24.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
+            series24.ShadowColor = System.Drawing.Color.ForestGreen;
+            series24.ShadowOffset = 1;
+            this.expenses.Series.Add(series23);
+            this.expenses.Series.Add(series24);
             this.expenses.Size = new System.Drawing.Size(808, 361);
             this.expenses.TabIndex = 0;
             this.expenses.Text = "chart1";
@@ -777,6 +785,7 @@
             this.pictureBox4.Location = new System.Drawing.Point(30, 69);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(399, 228);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 1;
             this.pictureBox4.TabStop = false;
             // 
@@ -792,48 +801,108 @@
             // Recent
             // 
             this.Recent.AutoSize = true;
-            this.Recent.Location = new System.Drawing.Point(16, 566);
+            this.Recent.Location = new System.Drawing.Point(16, 560);
             this.Recent.Name = "Recent";
             this.Recent.Size = new System.Drawing.Size(116, 16);
             this.Recent.TabIndex = 3;
             this.Recent.Text = "Recent Payments:";
             this.Recent.Click += new System.EventHandler(this.label16_Click);
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(19, 355);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(240, 150);
-            this.dataGridView1.TabIndex = 4;
-            // 
             // dataGridView2
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(19, 601);
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column8,
+            this.Column9,
+            this.Column10});
+            this.dataGridView2.Location = new System.Drawing.Point(18, 586);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
-            this.dataGridView2.Size = new System.Drawing.Size(240, 150);
+            this.dataGridView2.Size = new System.Drawing.Size(421, 199);
             this.dataGridView2.TabIndex = 5;
             // 
             // numberCredit
             // 
             this.numberCredit.AutoSize = true;
-            this.numberCredit.BackColor = System.Drawing.Color.Transparent;
+            this.numberCredit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(19)))), ((int)(((byte)(18)))));
             this.numberCredit.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numberCredit.ForeColor = System.Drawing.Color.SeaGreen;
-            this.numberCredit.Location = new System.Drawing.Point(156, 200);
+            this.numberCredit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(197)))), ((int)(((byte)(138)))));
+            this.numberCredit.Location = new System.Drawing.Point(143, 203);
             this.numberCredit.Name = "numberCredit";
             this.numberCredit.Size = new System.Drawing.Size(240, 35);
             this.numberCredit.TabIndex = 6;
             this.numberCredit.Text = "897655468766658";
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column5,
+            this.Column6,
+            this.Column7});
+            this.dataGridView1.Location = new System.Drawing.Point(19, 350);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.Size = new System.Drawing.Size(410, 190);
+            this.dataGridView1.TabIndex = 7;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Name:";
+            this.Column5.MinimumWidth = 6;
+            this.Column5.Name = "Column5";
+            this.Column5.Width = 125;
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "Date Pending: ";
+            this.Column6.MinimumWidth = 6;
+            this.Column6.Name = "Column6";
+            this.Column6.Width = 125;
+            // 
+            // Column7
+            // 
+            this.Column7.HeaderText = "Price";
+            this.Column7.MinimumWidth = 6;
+            this.Column7.Name = "Column7";
+            this.Column7.Width = 125;
+            // 
+            // Column8
+            // 
+            this.Column8.HeaderText = "Name:";
+            this.Column8.MinimumWidth = 6;
+            this.Column8.Name = "Column8";
+            this.Column8.Width = 125;
+            // 
+            // Column9
+            // 
+            this.Column9.HeaderText = "Date Comp.:";
+            this.Column9.MinimumWidth = 6;
+            this.Column9.Name = "Column9";
+            this.Column9.Width = 125;
+            // 
+            // Column10
+            // 
+            this.Column10.HeaderText = "Price:";
+            this.Column10.MinimumWidth = 6;
+            this.Column10.Name = "Column10";
+            this.Column10.Width = 125;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(247, 111);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(51, 16);
+            this.label16.TabIndex = 8;
+            this.label16.Text = "label16";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1568, 893);
+            this.BackColor = System.Drawing.Color.MintCream;
+            this.ClientSize = new System.Drawing.Size(1570, 893);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel6);
@@ -872,8 +941,8 @@
             this.panel8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.transaction_table)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -934,8 +1003,15 @@
         private System.Windows.Forms.Label Schedule;
         private System.Windows.Forms.Label Recent;
         private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label numberCredit;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
+        private System.Windows.Forms.Label label16;
     }
 }
 
