@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pnlNav = new System.Windows.Forms.Panel();
             this.btndashb = new System.Windows.Forms.Button();
@@ -73,6 +73,14 @@
             this.day = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
             this.expenses = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.label17 = new System.Windows.Forms.Label();
+            this.viewallbtn = new System.Windows.Forms.Button();
+            this.transaction_table = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -83,6 +91,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.expenses)).BeginInit();
+            this.panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.transaction_table)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -100,7 +110,7 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(0, 33);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(191, 582);
+            this.panel1.Size = new System.Drawing.Size(191, 693);
             this.panel1.TabIndex = 0;
             // 
             // pnlNav
@@ -282,7 +292,7 @@
             // 
             this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.textBox1.Location = new System.Drawing.Point(435, 45);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(407, 20);
             this.textBox1.TabIndex = 3;
@@ -296,7 +306,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.Location = new System.Drawing.Point(834, 41);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(37, 32);
             this.button1.TabIndex = 4;
@@ -310,7 +320,7 @@
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Location = new System.Drawing.Point(217, 99);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(196, 110);
             this.panel2.TabIndex = 5;
@@ -354,7 +364,7 @@
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(10, 17);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(40, 46);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -369,7 +379,7 @@
             this.panel4.Controls.Add(this.label9);
             this.panel4.Controls.Add(this.pictureBox1);
             this.panel4.Location = new System.Drawing.Point(433, 99);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(190, 110);
             this.panel4.TabIndex = 6;
@@ -413,7 +423,7 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(22, 17);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(40, 46);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -428,7 +438,7 @@
             this.panel5.Controls.Add(this.pictureBox3);
             this.panel5.Controls.Add(this.label11);
             this.panel5.Location = new System.Drawing.Point(638, 99);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(185, 110);
             this.panel5.TabIndex = 6;
@@ -460,7 +470,7 @@
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(12, 17);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(40, 46);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -503,10 +513,10 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.White;
-            this.panel6.Location = new System.Drawing.Point(827, 99);
-            this.panel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel6.Location = new System.Drawing.Point(837, 99);
+            this.panel6.Margin = new System.Windows.Forms.Padding(2);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(341, 516);
+            this.panel6.Size = new System.Drawing.Size(341, 627);
             this.panel6.TabIndex = 9;
             // 
             // Year
@@ -517,7 +527,7 @@
             this.Year.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Year.ForeColor = System.Drawing.Color.DarkGray;
             this.Year.Location = new System.Drawing.Point(415, 2);
-            this.Year.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Year.Margin = new System.Windows.Forms.Padding(2);
             this.Year.Name = "Year";
             this.Year.Size = new System.Drawing.Size(64, 26);
             this.Year.TabIndex = 13;
@@ -534,7 +544,7 @@
             this.Month.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Month.ForeColor = System.Drawing.Color.DarkGray;
             this.Month.Location = new System.Drawing.Point(347, 2);
-            this.Month.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Month.Margin = new System.Windows.Forms.Padding(2);
             this.Month.Name = "Month";
             this.Month.Size = new System.Drawing.Size(64, 26);
             this.Month.TabIndex = 12;
@@ -551,7 +561,7 @@
             this.Week.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Week.ForeColor = System.Drawing.Color.DarkGray;
             this.Week.Location = new System.Drawing.Point(279, 2);
-            this.Week.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Week.Margin = new System.Windows.Forms.Padding(2);
             this.Week.Name = "Week";
             this.Week.Size = new System.Drawing.Size(64, 26);
             this.Week.TabIndex = 11;
@@ -569,7 +579,7 @@
             this.day.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.day.ForeColor = System.Drawing.Color.DarkGray;
             this.day.Location = new System.Drawing.Point(210, 2);
-            this.day.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.day.Margin = new System.Windows.Forms.Padding(2);
             this.day.Name = "day";
             this.day.Size = new System.Drawing.Size(64, 26);
             this.day.TabIndex = 10;
@@ -585,49 +595,144 @@
             this.panel7.Controls.Add(this.Week);
             this.panel7.Controls.Add(this.Month);
             this.panel7.Controls.Add(this.expenses);
-            this.panel7.Location = new System.Drawing.Point(206, 227);
-            this.panel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel7.Location = new System.Drawing.Point(217, 227);
+            this.panel7.Margin = new System.Windows.Forms.Padding(2);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(610, 292);
+            this.panel7.Size = new System.Drawing.Size(606, 292);
             this.panel7.TabIndex = 10;
             // 
             // expenses
             // 
-            chartArea2.Name = "ChartArea1";
-            this.expenses.ChartAreas.Add(chartArea2);
-            legend2.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Top;
-            legend2.Name = "Legend1";
-            this.expenses.Legends.Add(legend2);
+            chartArea1.AxisX.IsLabelAutoFit = false;
+            chartArea1.AxisX.LabelStyle.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            chartArea1.AxisX.LabelStyle.ForeColor = System.Drawing.Color.DarkOliveGreen;
+            chartArea1.AxisX.MajorGrid.LineColor = System.Drawing.Color.White;
+            chartArea1.AxisX.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.NotSet;
+            chartArea1.AxisX.MajorGrid.LineWidth = 0;
+            chartArea1.AxisY.LineWidth = 0;
+            chartArea1.Name = "ChartArea1";
+            this.expenses.ChartAreas.Add(chartArea1);
+            legend1.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Top;
+            legend1.Name = "Legend1";
+            this.expenses.Legends.Add(legend1);
             this.expenses.Location = new System.Drawing.Point(0, -1);
             this.expenses.Name = "expenses";
-            series3.BorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot;
-            series3.BorderWidth = 2;
-            series3.ChartArea = "ChartArea1";
-            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series3.Legend = "Legend1";
-            series3.Name = "Expenses";
-            series3.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
-            series3.ShadowColor = System.Drawing.Color.Lime;
-            series3.ShadowOffset = 1;
-            series4.ChartArea = "ChartArea1";
-            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series4.Legend = "Legend1";
-            series4.Name = "Saves";
-            series4.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
-            series4.ShadowColor = System.Drawing.Color.ForestGreen;
-            series4.ShadowOffset = 1;
-            this.expenses.Series.Add(series3);
-            this.expenses.Series.Add(series4);
-            this.expenses.Size = new System.Drawing.Size(610, 293);
+            series1.BorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot;
+            series1.BorderWidth = 2;
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series1.Legend = "Legend1";
+            series1.Name = "Expenses";
+            series1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
+            series1.ShadowColor = System.Drawing.Color.Lime;
+            series1.ShadowOffset = 1;
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series2.Legend = "Legend1";
+            series2.Name = "Saves";
+            series2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
+            series2.ShadowColor = System.Drawing.Color.ForestGreen;
+            series2.ShadowOffset = 1;
+            this.expenses.Series.Add(series1);
+            this.expenses.Series.Add(series2);
+            this.expenses.Size = new System.Drawing.Size(606, 293);
             this.expenses.TabIndex = 0;
             this.expenses.Text = "chart1";
             this.expenses.Click += new System.EventHandler(this.chart1_Click_2);
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.White;
+            this.panel8.Controls.Add(this.transaction_table);
+            this.panel8.Controls.Add(this.viewallbtn);
+            this.panel8.Controls.Add(this.label17);
+            this.panel8.Location = new System.Drawing.Point(217, 540);
+            this.panel8.Margin = new System.Windows.Forms.Padding(2);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(606, 186);
+            this.panel8.TabIndex = 11;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label17.Location = new System.Drawing.Point(2, 3);
+            this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(151, 29);
+            this.label17.TabIndex = 10;
+            this.label17.Text = "Recent Transactions";
+            // 
+            // viewallbtn
+            // 
+            this.viewallbtn.BackColor = System.Drawing.Color.Transparent;
+            this.viewallbtn.FlatAppearance.BorderSize = 0;
+            this.viewallbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.viewallbtn.ForeColor = System.Drawing.Color.Green;
+            this.viewallbtn.Location = new System.Drawing.Point(528, 4);
+            this.viewallbtn.Name = "viewallbtn";
+            this.viewallbtn.Size = new System.Drawing.Size(75, 23);
+            this.viewallbtn.TabIndex = 12;
+            this.viewallbtn.Text = "View All    >";
+            this.viewallbtn.UseVisualStyleBackColor = false;
+            this.viewallbtn.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // transaction_table
+            // 
+            this.transaction_table.AllowUserToAddRows = false;
+            this.transaction_table.AllowUserToDeleteRows = false;
+            this.transaction_table.AllowUserToOrderColumns = true;
+            this.transaction_table.AllowUserToResizeColumns = false;
+            this.transaction_table.AllowUserToResizeRows = false;
+            this.transaction_table.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
+            this.transaction_table.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.transaction_table.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.transaction_table.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.transaction_table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.transaction_table.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4});
+            this.transaction_table.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            this.transaction_table.GridColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.transaction_table.Location = new System.Drawing.Point(1, 36);
+            this.transaction_table.Name = "transaction_table";
+            this.transaction_table.ReadOnly = true;
+            this.transaction_table.Size = new System.Drawing.Size(603, 150);
+            this.transaction_table.TabIndex = 13;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Name";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Type";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Amount";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Date";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1180, 615);
+            this.ClientSize = new System.Drawing.Size(1176, 725);
+            this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.label5);
@@ -658,6 +763,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.expenses)).EndInit();
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.transaction_table)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -705,6 +813,14 @@
         private System.Windows.Forms.Button Year;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.DataVisualization.Charting.Chart expenses;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Button viewallbtn;
+        private System.Windows.Forms.DataGridView transaction_table;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
     }
 }
 
