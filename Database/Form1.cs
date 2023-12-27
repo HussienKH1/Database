@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using System.Drawing.Drawing2D;
 
 namespace Database
 {
@@ -35,6 +36,7 @@ namespace Database
             pnlNav.Top = btndashb.Top;
             pnlNav.Left = btndashb.Left;
             btndashb.BackColor = Color.FromArgb(146, 209, 163);
+            
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)
@@ -142,6 +144,98 @@ namespace Database
         private void Exit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label28_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void chart1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            chartSaved.Series["Series"].Points.AddXY("Jan.", 1400);
+
+            chartSaved.Series["Series"].Points.AddXY("Mar.", 2500);
+
+            chartSaved.Series["Series"].Points.AddXY("May", 3500);
+
+            chartSaved.Series["Series"].Points.AddXY("July", 2000);
+
+            chartSaved.Series["Series"].Points.AddXY("Sept.", 2800);
+
+            chartSaved.Series["Series"].Points.AddXY("Nov.", 3400);
+
+
+            chartSaved.Series["Series"].Points.AddXY("Dec.", 3100);
+
+
+
+        }
+
+        private void chart1_Click_1(object sender, EventArgs e)
+        {
+           
+
+        }
+
+        private void Week_Click(object sender, EventArgs e)
+        {
+            Week.ForeColor = Color.Black;
+        }
+
+        private void day_Click(object sender, EventArgs e)
+        {
+            day.ForeColor = Color.Black; 
+        }
+
+        private void Month_Click(object sender, EventArgs e)
+        {
+            Month.ForeColor = Color.Black;
+        }
+
+        private void Year_Click(object sender, EventArgs e)
+        {
+            Year.ForeColor = Color.Black;
+        }
+
+        private void day_Leave(object sender, EventArgs e)
+        {
+            day.ForeColor = Color.DarkGray; 
+        }
+
+        private void Week_Layout(object sender, LayoutEventArgs e)
+        {
+
+        }
+
+        private void Week_Leave(object sender, EventArgs e)
+        {
+            Week.ForeColor = Color.DarkGray;
+        }
+
+        private void Month_Leave(object sender, EventArgs e)
+        {
+            Month.ForeColor = Color.DarkGray;
+        }
+
+        private void Year_Leave(object sender, EventArgs e)
+        {
+            Year.ForeColor = Color.DarkGray;
         }
     }
 }
