@@ -168,20 +168,31 @@ namespace Database
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            chartSaved.Series["Series"].Points.AddXY("Jan.", 1400);
+            expenses.Series["Saves"].Points.AddXY("Jan.", 2000);
+            expenses.Series["Saves"].Points.AddXY("Feb.", 3000);
+            expenses.Series["Saves"].Points.AddXY("Mar.", 300);
+            expenses.Series["Saves"].Points.AddXY("Apr.", 2000);
+            expenses.Series["Saves"].Points.AddXY("May", 1000);
+            expenses.Series["Saves"].Points.AddXY("Jun.", 3000);
+            expenses.Series["Saves"].Points.AddXY("July", 1500);
+            expenses.Series["Saves"].Points.AddXY("Aug.", 3000);
+            expenses.Series["Saves"].Points.AddXY("Sept.", 1000);
+            expenses.Series["Saves"].Points.AddXY("Oct.", 500);
+            expenses.Series["Saves"].Points.AddXY("Nov.", 2000);
+            expenses.Series["Saves"].Points.AddXY("Dec.", 1000);
 
-            chartSaved.Series["Series"].Points.AddXY("Mar.", 2500);
-
-            chartSaved.Series["Series"].Points.AddXY("May", 3500);
-
-            chartSaved.Series["Series"].Points.AddXY("July", 2000);
-
-            chartSaved.Series["Series"].Points.AddXY("Sept.", 2800);
-
-            chartSaved.Series["Series"].Points.AddXY("Nov.", 3400);
-
-
-            chartSaved.Series["Series"].Points.AddXY("Dec.", 3100);
+            expenses.Series["Expenses"].Points.AddXY("Jan.", 1400);
+            expenses.Series["Expenses"].Points.AddXY("Feb.", 1400);
+            expenses.Series["Expenses"].Points.AddXY("Mar.", 2500);
+            expenses.Series["Expenses"].Points.AddXY("Apr.", 1400);
+            expenses.Series["Expenses"].Points.AddXY("May", 3500);
+            expenses.Series["Expenses"].Points.AddXY("Jun.", 1400);
+            expenses.Series["Expenses"].Points.AddXY("July", 2000);
+            expenses.Series["Expenses"].Points.AddXY("Aug.", 1400);
+            expenses.Series["Expenses"].Points.AddXY("Sept.", 2800);
+            expenses.Series["Expenses"].Points.AddXY("Oct.", 1400);
+            expenses.Series["Expenses"].Points.AddXY("Nov.", 3400);
+            expenses.Series["Expenses"].Points.AddXY("Dec.", 3100);
 
 
 
@@ -236,6 +247,11 @@ namespace Database
         private void Year_Leave(object sender, EventArgs e)
         {
             Year.ForeColor = Color.DarkGray;
+        }
+
+        private void chart1_Click_2(object sender, EventArgs e)
+        {
+
         }
     }
 }
