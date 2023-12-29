@@ -7,65 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Runtime.InteropServices;
-using System.Drawing.Drawing2D;
 
 namespace Database
 {
     public partial class Form1 : Form
     {
-
-        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
-
-        private static extern IntPtr CreateRoundRectRgn
-         (
-              int nLeftRect,
-              int nTopRect,
-              int nRightRect,
-              int nBottomRect,
-              int nWidthEllipse,
-             int nHeightEllipse
-
-          );
-
         public Form1()
         {
             InitializeComponent();
-            
         }
 
-
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-
-        }
-
-
-        private void guna2CircleButton1_Click(object sender, EventArgs e)
+        private void exit_btn_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-
-        private void bunifuButton1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bunifuButton2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bunifuButton4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bunifuDatavizAdvanced1_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
