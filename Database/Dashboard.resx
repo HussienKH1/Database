@@ -1278,15 +1278,15 @@
         gCQRBAAAAFBxjD/rYT/ub7fb7Xa73e7b7vUNABA1xgtD1x5MMLTs+QAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="bunifuLabel1.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Microsoft Sans Serif'; font-size: 12pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
-  </data>
   <metadata name="gunaLineDataset1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>225, 19</value>
   </metadata>
   <metadata name="gunaBarDataset1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>52, 21</value>
   </metadata>
+  <data name="bunifuLabel1.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Microsoft Sans Serif'; font-size: 12pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
+  </data>
   <data name="bunifuPanel2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAqwAAAACCAYAAACdS46HAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -17066,29 +17066,30 @@
   </data>
   <data name="bunifuPanel20.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        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
+        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
+        SUVORK5CYII=
 </value>
   </data>
   <metadata name="bunifuLineChart1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
