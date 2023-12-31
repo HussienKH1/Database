@@ -26,5 +26,10 @@ namespace Database
         {
 
         }
+
+        private void bunifuPanel9_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
