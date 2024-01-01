@@ -341,6 +341,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="carmodel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="carmodel.Designer.cs">
+      <DependentUpon>carmodel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dash.cs" />
     <Compile Include="Dashboard.cs">
       <SubType>Form</SubType>
@@ -350,6 +356,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="carmodel.resx">
+      <DependentUpon>carmodel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
