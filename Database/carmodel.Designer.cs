@@ -36,7 +36,6 @@
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            this.bunifuPictureBox11 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.bunifuPictureBox12 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.bunifuPictureBox13 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.bunifuPictureBox14 = new Bunifu.UI.WinForms.BunifuPictureBox();
@@ -101,7 +100,10 @@
             this.bunifuButton6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuButton7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuGradientPanel1 = new Bunifu.UI.WinForms.BunifuGradientPanel();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox11)).BeginInit();
+            this.bunifuPictureBox11 = new Bunifu.UI.WinForms.BunifuPictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.bunifuPanel13 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.bunifuPanel14 = new Bunifu.UI.WinForms.BunifuPanel();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox14)).BeginInit();
@@ -128,37 +130,22 @@
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox8)).BeginInit();
             this.bunifuPanel12.SuspendLayout();
             this.bunifuGradientPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // bunifuPictureBox11
-            // 
-            this.bunifuPictureBox11.AllowFocused = false;
-            this.bunifuPictureBox11.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuPictureBox11.AutoSizeHeight = true;
-            this.bunifuPictureBox11.BorderRadius = 222;
-            this.bunifuPictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox11.Image")));
-            this.bunifuPictureBox11.IsCircle = true;
-            this.bunifuPictureBox11.Location = new System.Drawing.Point(375, 180);
-            this.bunifuPictureBox11.Margin = new System.Windows.Forms.Padding(2);
-            this.bunifuPictureBox11.Name = "bunifuPictureBox11";
-            this.bunifuPictureBox11.Size = new System.Drawing.Size(444, 444);
-            this.bunifuPictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuPictureBox11.TabIndex = 10;
-            this.bunifuPictureBox11.TabStop = false;
-            this.bunifuPictureBox11.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
             // 
             // bunifuPictureBox12
             // 
             this.bunifuPictureBox12.AllowFocused = false;
             this.bunifuPictureBox12.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bunifuPictureBox12.AutoSizeHeight = true;
-            this.bunifuPictureBox12.BorderRadius = 30;
+            this.bunifuPictureBox12.BorderRadius = 42;
             this.bunifuPictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox12.Image")));
             this.bunifuPictureBox12.IsCircle = true;
-            this.bunifuPictureBox12.Location = new System.Drawing.Point(210, 5);
+            this.bunifuPictureBox12.Location = new System.Drawing.Point(275, 3);
             this.bunifuPictureBox12.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuPictureBox12.Name = "bunifuPictureBox12";
-            this.bunifuPictureBox12.Size = new System.Drawing.Size(60, 60);
+            this.bunifuPictureBox12.Size = new System.Drawing.Size(85, 85);
             this.bunifuPictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bunifuPictureBox12.TabIndex = 11;
             this.bunifuPictureBox12.TabStop = false;
@@ -170,13 +157,13 @@
             this.bunifuPictureBox13.AllowFocused = false;
             this.bunifuPictureBox13.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bunifuPictureBox13.AutoSizeHeight = true;
-            this.bunifuPictureBox13.BorderRadius = 30;
+            this.bunifuPictureBox13.BorderRadius = 42;
             this.bunifuPictureBox13.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox13.Image")));
             this.bunifuPictureBox13.IsCircle = true;
-            this.bunifuPictureBox13.Location = new System.Drawing.Point(117, 5);
+            this.bunifuPictureBox13.Location = new System.Drawing.Point(165, 3);
             this.bunifuPictureBox13.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuPictureBox13.Name = "bunifuPictureBox13";
-            this.bunifuPictureBox13.Size = new System.Drawing.Size(60, 60);
+            this.bunifuPictureBox13.Size = new System.Drawing.Size(85, 85);
             this.bunifuPictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bunifuPictureBox13.TabIndex = 12;
             this.bunifuPictureBox13.TabStop = false;
@@ -188,13 +175,13 @@
             this.bunifuPictureBox14.AllowFocused = false;
             this.bunifuPictureBox14.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bunifuPictureBox14.AutoSizeHeight = true;
-            this.bunifuPictureBox14.BorderRadius = 30;
+            this.bunifuPictureBox14.BorderRadius = 42;
             this.bunifuPictureBox14.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox14.Image")));
             this.bunifuPictureBox14.IsCircle = true;
-            this.bunifuPictureBox14.Location = new System.Drawing.Point(25, 5);
+            this.bunifuPictureBox14.Location = new System.Drawing.Point(45, 2);
             this.bunifuPictureBox14.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuPictureBox14.Name = "bunifuPictureBox14";
-            this.bunifuPictureBox14.Size = new System.Drawing.Size(60, 60);
+            this.bunifuPictureBox14.Size = new System.Drawing.Size(85, 85);
             this.bunifuPictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bunifuPictureBox14.TabIndex = 13;
             this.bunifuPictureBox14.TabStop = false;
@@ -219,7 +206,7 @@
             this.bunifuPanel11.Controls.Add(this.bunifuPanel5);
             this.bunifuPanel11.Controls.Add(this.bunifuPanel7);
             this.bunifuPanel11.Controls.Add(this.bunifuPanel8);
-            this.bunifuPanel11.Location = new System.Drawing.Point(1046, 56);
+            this.bunifuPanel11.Location = new System.Drawing.Point(1046, 49);
             this.bunifuPanel11.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuPanel11.Name = "bunifuPanel11";
             this.bunifuPanel11.ShowBorders = true;
@@ -312,6 +299,7 @@
             this.bunifuPanel1.ShowBorders = true;
             this.bunifuPanel1.Size = new System.Drawing.Size(293, 80);
             this.bunifuPanel1.TabIndex = 0;
+            this.bunifuPanel1.Click += new System.EventHandler(this.bunifuPanel1_Click);
             // 
             // label3
             // 
@@ -930,10 +918,10 @@
             this.bunifuPanel12.Controls.Add(this.bunifuPictureBox12);
             this.bunifuPanel12.Controls.Add(this.bunifuPictureBox13);
             this.bunifuPanel12.Controls.Add(this.bunifuPictureBox14);
-            this.bunifuPanel12.Location = new System.Drawing.Point(463, 56);
+            this.bunifuPanel12.Location = new System.Drawing.Point(426, 31);
             this.bunifuPanel12.Name = "bunifuPanel12";
             this.bunifuPanel12.ShowBorders = true;
-            this.bunifuPanel12.Size = new System.Drawing.Size(298, 69);
+            this.bunifuPanel12.Size = new System.Drawing.Size(391, 92);
             this.bunifuPanel12.TabIndex = 16;
             // 
             // bunifuButton1
@@ -1583,6 +1571,58 @@
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(230, 925);
             this.bunifuGradientPanel1.TabIndex = 17;
             // 
+            // bunifuPictureBox11
+            // 
+            this.bunifuPictureBox11.AllowFocused = false;
+            this.bunifuPictureBox11.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuPictureBox11.AutoSizeHeight = true;
+            this.bunifuPictureBox11.BorderRadius = 234;
+            this.bunifuPictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox11.Image")));
+            this.bunifuPictureBox11.IsCircle = true;
+            this.bunifuPictureBox11.Location = new System.Drawing.Point(377, 202);
+            this.bunifuPictureBox11.Name = "bunifuPictureBox11";
+            this.bunifuPictureBox11.Size = new System.Drawing.Size(469, 469);
+            this.bunifuPictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuPictureBox11.TabIndex = 18;
+            this.bunifuPictureBox11.TabStop = false;
+            this.bunifuPictureBox11.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(224, 859);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(10, 14);
+            this.pictureBox1.TabIndex = 19;
+            this.pictureBox1.TabStop = false;
+            // 
+            // bunifuPanel13
+            // 
+            this.bunifuPanel13.BackgroundColor = System.Drawing.Color.LightGray;
+            this.bunifuPanel13.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel13.BackgroundImage")));
+            this.bunifuPanel13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuPanel13.BorderColor = System.Drawing.Color.LightGray;
+            this.bunifuPanel13.BorderRadius = 3;
+            this.bunifuPanel13.BorderThickness = 1;
+            this.bunifuPanel13.Location = new System.Drawing.Point(1011, 68);
+            this.bunifuPanel13.Name = "bunifuPanel13";
+            this.bunifuPanel13.ShowBorders = true;
+            this.bunifuPanel13.Size = new System.Drawing.Size(2, 800);
+            this.bunifuPanel13.TabIndex = 20;
+            // 
+            // bunifuPanel14
+            // 
+            this.bunifuPanel14.BackgroundColor = System.Drawing.Color.LightGray;
+            this.bunifuPanel14.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel14.BackgroundImage")));
+            this.bunifuPanel14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuPanel14.BorderColor = System.Drawing.Color.LightGray;
+            this.bunifuPanel14.BorderRadius = 3;
+            this.bunifuPanel14.BorderThickness = 1;
+            this.bunifuPanel14.Location = new System.Drawing.Point(274, 129);
+            this.bunifuPanel14.Name = "bunifuPanel14";
+            this.bunifuPanel14.ShowBorders = true;
+            this.bunifuPanel14.Size = new System.Drawing.Size(684, 2);
+            this.bunifuPanel14.TabIndex = 21;
+            // 
             // carmodel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1590,15 +1630,18 @@
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1370, 921);
+            this.Controls.Add(this.bunifuPanel14);
+            this.Controls.Add(this.bunifuPanel13);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.bunifuPictureBox11);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.Controls.Add(this.bunifuPanel12);
             this.Controls.Add(this.Exit_btn);
             this.Controls.Add(this.bunifuPanel11);
-            this.Controls.Add(this.bunifuPictureBox11);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "carmodel";
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox11)).EndInit();
+            this.Load += new System.EventHandler(this.carmodel_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox14)).EndInit();
@@ -1635,12 +1678,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox8)).EndInit();
             this.bunifuPanel12.ResumeLayout(false);
             this.bunifuGradientPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox11;
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox12;
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox13;
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox14;
@@ -1705,5 +1749,9 @@
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton6;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton7;
         private Bunifu.UI.WinForms.BunifuGradientPanel bunifuGradientPanel1;
+        private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox11;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private Bunifu.UI.WinForms.BunifuPanel bunifuPanel13;
+        private Bunifu.UI.WinForms.BunifuPanel bunifuPanel14;
     }
 }

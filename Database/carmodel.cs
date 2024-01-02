@@ -26,7 +26,6 @@ namespace Database
         public carmodel()
         {
             InitializeComponent();
-            InitializeComponent();
             this.FormBorderStyle = FormBorderStyle.None;
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
         }
@@ -67,6 +66,23 @@ namespace Database
             this.Hide();
             f.ShowDialog();
             
+        }
+
+        private void carmodel_Load(object sender, EventArgs e)
+        {
+            bunifuPictureBox11.Image = pictureBox1.Image;
+            bunifuPictureBox14.Image = pictureBox1.Image;
+            bunifuPictureBox13.Image = pictureBox1.Image;
+            bunifuPictureBox12.Image = pictureBox1.Image;
+
+        }
+
+        private void bunifuPanel1_Click(object sender, EventArgs e)
+        {
+            bunifuPictureBox11.Image = bunifuPictureBox1.Image;
+            bunifuPictureBox14.Load("carModels\\SideFront.png");
+            bunifuPictureBox13.Load("carModels\\SideBack.png");
+            bunifuPictureBox12.Load("carModels\\leftSide.png");
         }
     }
 }
